@@ -1,0 +1,113 @@
+/* applies to create_raffle.hbs */
+
+html {
+    background-color:#616161 ; /*blue lighten-3*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    flex: 1 0 auto
+}
+
+h1{
+    text-decoration-color:#b2ebf2 ;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Added to make footer at bottom*/ 
+}
+
+/* Nav bar */
+nav {
+    background-color: grey;
+}
+
+nav img {
+    height: 3em;
+    vertical-align: middle;
+    margin: 0 .5em;
+}
+
+
+.outline{
+    outline: 10px solid #A6A6A6;
+}
+
+.input-field { height: 20%; }
+
+.grey {
+    text-decoration-color: #616161;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: 700;
+} 
+
+.midsize {
+    font-weight:600;
+}
+
+input  {
+    border:1px solid rgb(180, 177, 177);
+ }
+
+ #results {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 80px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+  }
+
+  #results ul {
+    margin: 50px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #results li {
+    margin-top: 20px;
+  }
+
+
+  #results {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 80px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+  }
+
+  #results ul {
+    margin: 50px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #results li {
+    margin-top: 20px;
+  }
+
+  #chooser {
+    margin-top: 20px;
+    display: none;
+  }
+
+  #reminder {
+    float: right;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold
+  }

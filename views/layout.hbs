@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>{{title}}</title>
+  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="/styles/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- Shared site-wide CSS  -->
+  <link rel="stylesheet" href="/styles/main.css">
+
+  {{#if style}}
+  <link rel="stylesheet" href="/styles/{{style}}.css">
+  {{/if}}
+
+  {{#each styles}}
+  <link rel="stylesheet" href="/styles/{{this}}.css">
+  {{/each}}
+</head>
+
+<body>
+
+  <!-- https://materializecss.com/navbar.html -->
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <img class="hide-on-small-and-down">
+        {{!-- <a href="/" class="brand-logo cyan-text text-lighten-4">Helper App</a> --}}
+        <a href="/" class=" midsize brand-logo cyan-text text-lighten-4">Raffler's Helper App<i class="material-icons white-text">flare</i></a>
+        <ul id="desktop-nav" class="right hide-on-med-and-down">
+          <li><a href="/create"><i class="material-icons left cyan-text text-lighten-4">build</i>Create Raffle</a></li>
+          <li><a href="/blacklist"><i class="material-icons left cyan-text text-lighten-4">block</i>Blacklist</a></li>
+          <li><a href="/"><i class="material-icons left cyan-text text-lighten-4">home</i>Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {{{body}}}
+  </main>
+
+
+  <!-- Compiled and minified Materialize JavaScript -->
+  <script src="/js/materialize.min.js"></script>
+
+  <!-- initialize Materialize elements -->
+  <script> M.AutoInit();</script>
+
+</body>
+
+</html>

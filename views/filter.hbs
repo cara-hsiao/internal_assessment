@@ -1,0 +1,47 @@
+<!-- https://materializecss.com/grid.html -->
+
+<br>
+
+<div class="container">
+
+
+    <h2 class="cyan-text text-lighten-4 bold">Filter Raffle</h2>
+    <h5 class="grey-text text-lighten-1"> Select filters and raffle settings: </h5>
+    <br>
+
+    <form class="col s12">
+        <div class=" low card-panel white outline grey-text" ;>
+            <h6 class="grey-text text-darken-1 "><b>Required:</b></h6>
+            Number of Winners:
+            <input type="number" class=" browser-default" id="numwinners" name="numwinners" min="1" max="100" required>
+            <br>
+            <hr>
+            <h6 class="grey-text text-darken-1 "><b>Optional:</b></h6>
+            Starting Invoice #:
+            <input class="browser-default" type="number" id="numinv" name="numinv" min="1" max="1000">
+            <br>
+            <br>
+            Number of Backup Winners:
+            <input class="browser-default" type="number" id="numbackup" name="numbackup" min="1" max="100">
+            <br>
+            <div class="switch">
+                <br>
+                Exclude Blacklisted emails?
+                <label>
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                </label>
+            </div>
+            <br>
+            Maximum number of Blacklists:
+            <input class="browser-default" type="number" id="winners" name="winners" min="1" max="1000">
+
+        </div>
+        <br>
+        <button class="waves-effect waves-light btn cyan lighten-4 grey-text text-darken-2" type="submit" name="action" 
+            onclick="window.location.href='/results';">Generate Winners
+        </button>
+
+    </form>

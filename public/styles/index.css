@@ -1,0 +1,55 @@
+/* applies to index.hbs */
+
+html {
+    background-color: #737373;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+h1 {
+    font-weight: bolder;
+    color: #737373;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.col {
+    display: inline;
+    vertical-align: middle;
+}
+
+.container  {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container .row {
+    margin: 0 auto;
+  }
+
+  .button {
+      color: #B9F6F8;
+  } 
+
+.outline{
+    outline: 10px solid #616161;
+}
+
+nav{
+    background-color: #616161;
+ }
+
+.bold {
+    font-weight: 700;
+}
+.midsize {
+    font-weight:600;
+}
